@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <nav>
-      <!-- 모바일용 -->
-      <div class="wrap-mobile">
+    <!-- 모바일용 -->
+    <div class="wrap-mobile">
+      <nav>
         <div class="mobile-menu">
-          <ul class="nav-list">
+          <ul class="mobile-nav">
             <li>
               <a href="">home</a>
             </li>
@@ -30,22 +30,48 @@
               <a href="">velog</a>
             </li>
           </ul>
-
           <button class="dark-btn">Dark</button>
-        </div>
-        <!-- 모바일 버튼 nav나타내기  -->
 
-        <button class="mobile-btn" type="button">
-          <img class="list-btn" src="./img/list.svg" alt="" />
-          <!-- <div class="hamurer-box">
+          <!-- 모바일 버튼 nav나타내기  -->
+          <button class="mobile-btn" type="button">
+            <!-- <img class="list-btn" src="./img/list.svg" alt="" /> -->
+            <!-- <div class="hamurer-box">
                 <div class="hamberger-line"></div>
                 <div class="hamberger-line"></div>
                 <div class="hamberger-line"></div>
               </div> -->
-        </button>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="web-menu">
+        <h1 class="logo"></h1>
+        <a href="#">
+          <img src="./img/logo.png" alt="" class="logo" />
+        </a>
+
+        <ul class="web-nav">
+          <li>
+            <a href="">home</a>
+          </li>
+          <li>
+            <a href="">about me</a>
+          </li>
+          <li>
+            <a href="">projects</a>
+          </li>
+          <li>
+            <a href="">contact</a>
+          </li>
+          <li>
+            <a href="">velog</a>
+          </li>
+        </ul>
+        <button class="">Dark</button>
       </div>
-    </nav>
-    <header></header>
+    </header>
     <main>
       <section id="#aboutme" class="aboutme">
         <div class="aboutWrap">
@@ -53,31 +79,37 @@
           <img src="./img/hee.jpg" art="" />
           <div class="self-story">
             <p class="introduce">
-              안녕하세요. 일상의 행복이 목표를 이루는 힘임을 믿는 개발자
+              안녕하세요. 일상의 행복이 목표를 이루는 힘이 됨을 믿는 개발자
               LaHee입니다.
             </p>
+            <p class="introduce">
+              어느 분야를 공부하든 꾸준함을 가지고 노력한 결과, 대외수상 3번
+              교내수상 6번을 낼 수 있었습니다.
+            </p>
           </div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="AboutUl">
+            <li>
+              자격증 : 정보처리기사 | SQLD <br />
+              외국어 : 오픽 IM1
+            </li>
+            <li>교외 수상<br /></li>
           </ul>
         </div>
       </section>
     </main>
     <footer></footer>
     <script>
-      function mobile_nav() {
-        var m_navDisplay = false;
-        let m_nav = document.getElementsByClassName(".mobile-btn");
-        console.log(m_nav);
-        if (!m_navDisplay) {
-          m_nav.style.display = "none";
-          m_navDisplay = true;
-        } else {
-          m_nav.style.display = "inline-block";
-        }
-      }
+      // function mobile_nav() {
+      //   var m_navDisplay = false;
+      //   let m_nav = document.getElementsByClassName(".mobile-btn");
+      //   console.log(m_nav);
+      //   if (!m_navDisplay) {
+      //     m_nav.style.display = "none";
+      //     m_navDisplay = true;
+      //   } else {
+      //     m_nav.style.display = "inline-block";
+      //   }
+      // }
     </script>
   </body>
 </html>
