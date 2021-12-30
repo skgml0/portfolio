@@ -50,3 +50,23 @@ body {
   border-radius: 50%;
   border: none;
 }
+
+/* About me css */
+.aboutWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f39393;
+}
+.aboutWrap img {
+  width: 140px;
+  height: 200px;
+  border-radius: 60%;
+  padding: 20px 0;
+}
+.aboutWrap .self-story .introduce {
+  font-size: 20px;
+  
+}
