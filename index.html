@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="stylesheet" href="reset.css">
-    <style>
-    </style>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- 모바일용 -->
+        <div class="wrap-mobile">
+          <div class="mobile-menu">
+            <ul class="nav-list">
+              <li>
+                <a href="">home</a>
+              </li>
+              <li>
+                <a href="">about me</a>
+              </li>
+              <li>
+                <a href="">projects</a>
+              </li>
+              <li>
+                <a href="">contact</a>
+              </li>
+              <li>
+                <a href="">velog</a>
+              </li>
+            </ul>
+
+            <button class="dark-btn">Dark</button>
+          </div>
+          <!-- 모바일 버튼 nav나타내기  -->
+
+          <button class="mobile-btn" type="button">
+            <img class="list-btn" src="./img/list.svg" alt="" />
+            <!-- <div class="hamurer-box">
+                <div class="hamberger-line"></div>
+                <div class="hamberger-line"></div>
+                <div class="hamberger-line"></div>
+              </div> -->
+          </button>
+        </div>
+      </nav>
+    </header>
+    <script>
+      var m_navDisplay = ㄹ;
+      function mobile_nav() {
+        let m_nav = document.getElementsByClassName("mobile-btn");
+        if (m_nav.style.display == "inline-block") {
+          m_nav.style.display = "none";
+        } else {
+          m_nav.style.display = "inline-block";
+        }
+      }
+    </script>
+  </body>
 </html>
