@@ -48,11 +48,13 @@
       </nav>
     </header>
     <script>
-      var m_navDisplay = ㄹ;
       function mobile_nav() {
-        let m_nav = document.getElementsByClassName("mobile-btn");
-        if (m_nav.style.display == "inline-block") {
+        var m_navDisplay = false;
+        let m_nav = document.getElementsByClassName(".mobile-btn");
+        console.log(m_nav);
+        if (!m_navDisplay) {
           m_nav.style.display = "none";
+          m_navDisplay = true;
         } else {
           m_nav.style.display = "inline-block";
         }
