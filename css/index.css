@@ -9,9 +9,9 @@ body {
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  position: fixed;
   justify-content: center;
   align-items: center;
+  position: fixed;
   right: 15px;
   bottom: 15px;
   text-align: center;
@@ -20,14 +20,14 @@ body {
   display: none;
 }
 .mobile-menu .mobile-nav li {
-  width: 8.4rem;
+  width: 84px;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 5%;
+  background: linear-gradient(134deg, #ff7272 0%, rgb(73, 97, 220) 99%);
   font-size: 1.5rem;
   line-height: 3rem;
-  padding: 0.4rem;
   color: #ffff;
-  background: linear-gradient(134deg, #ff7272 0%, rgb(73, 97, 220) 99%);
-  margin-bottom: 10px;
-  border-radius: 5%;
   box-shadow: rgb(0 0 0 / 10%) 1px 3px 13px 0px;
 }
 .list-btn {
@@ -35,24 +35,87 @@ body {
   height: 50px;
 }
 
-.dark-btn {
+.dark-m-btn {
   width: 65px;
   height: 65px;
-  background: linear-gradient(134deg, #ff7272 0%, rgb(73, 97, 220) 99%);
+  margin-bottom: 5px;
   border-radius: 50%;
   border: none;
-  margin-bottom: 5px;
+  background: linear-gradient(134deg, #ff7272 0%, rgb(73, 97, 220) 99%);
 }
-.mobile-btn {
+.mobile-m-btn {
   display: block;
   width: 65px;
   height: 65px;
-  background: linear-gradient(134deg, #ff7272 0%, rgb(73, 97, 220) 99%);
   border-radius: 50%;
   border: none;
+  background: linear-gradient(134deg, #ff7272 0%, rgb(73, 97, 220) 99%);
 }
-
-/* About me css */
+/* home css!! */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: cornsilk;
+}
+.home .homeWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .homeWrap .home-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.home-info .txtBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.txtBox {
+  margin-top: 40px;
+}
+.txtBox > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.txtBox > h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.homeWrap .download {
+  margin: 20px 0;
+  border-radius: 10%;
+  background-color: rgb(180, 238, 142);
+}
+.home-info .myActive {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+.home-intoduce {
+  min-width: 70%;
+  height: 300px;
+  border: 3px double rgb(68, 65, 65);
+  margin: 30px 40px;
+}
+.home-intoduce > p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.myActive .velog {
+  width: 24px;
+  height: 24px;
+}
+/* About me css!! */
 .aboutWrap {
   display: flex;
   flex-direction: column;
@@ -68,6 +131,7 @@ body {
   padding: 10px 0;
   margin: 25px 0;
 }
+
 .aboutWrap .self-story .introduce {
   font-size: 15px;
   text-align: center;
@@ -94,22 +158,63 @@ body {
   box-shadow: 5px 5px 5px gray;
 }
 
+/* Web!!! */
 @media screen and (min-width: 760px) {
   .wrap-mobile {
     display: none;
   }
-
-  .logo {
+  header {
+    width: 100%;
+    /* height: 20px; */
+    border-bottom: 2px solid #bdfa91;
+  }
+  .logoimg {
     width: 80px;
     height: 80px;
-    margin: 5px 3px;
     transform: scale(1.2);
+    margin-left: 70px;
   }
   .web-menu {
     display: flex;
+    justify-content: space-between;
   }
   .web-nave {
     display: flex;
     flex-direction: row;
+  }
+  .web-menu li {
+    display: inline-block;
+  }
+  .web-menu li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(58, 63, 31);
+    line-height: 80px;
+    margin-right: 30px;
+  }
+
+  .web-menu .dark-w-btn {
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 70px;
+    background-color: rgb(180, 238, 142);
+    border-radius: 10%;
+  }
+  /* home */
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+  }
+  .home .homeWrap {
+    display: flex;
+  }
+  .myActive .velog {
+    width: 24px;
+    height: 24px;
   }
 }
