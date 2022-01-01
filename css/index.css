@@ -122,7 +122,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #f5eaaa;
+  background-color: cornsilk;
 }
 .aboutWrap img {
   width: 160px;
@@ -158,6 +158,56 @@ body {
   box-shadow: 5px 5px 5px gray;
 }
 
+.MySkillsets {
+  display: flex;
+  flex-direction: column;
+  justify-content: content;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background-color: cornsilk;
+}
+.MySkillsets h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.MySkillsets .list-skills {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  min-width: 700px;
+  height: 100px;
+  /* background-color: purple; */
+}
+.MySkillsets .list-skills li {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.MySkillsets .list-skills .html {
+  background: url("../img/skill/css_sprites.png") -10px -80px;
+}
+.MySkillsets .list-skills .css {
+  background: url("../img/skill/css_sprites.png") -10px -10px;
+}
+.MySkillsets .list-skills .js {
+  background: url("../img/skill/css_sprites.png") -10px -150px;
+}
+.MySkillsets .list-skills .react {
+  background: url("../img/skill/css_sprites.png") -10px -360px;
+}
+.MySkillsets .list-skills .node {
+  background: url("../img/skill/css_sprites.png") -10px -220px;
+}
+.MySkillsets .list-skills .sass {
+  background: url("../img/skill/css_sprites.png") -10px -430px;
+}
+.MySkillsets .list-skills .python {
+  background: url("../img/skill/css_sprites.png") -10px -290px;
+}
 /* Web!!! */
 @media screen and (min-width: 760px) {
   .wrap-mobile {
