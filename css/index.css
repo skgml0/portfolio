@@ -4,6 +4,14 @@ html {
 body {
   width: 100%;
   height: 100%;
+  background-color: cornsilk;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 40px;
 }
 
 .mobile-menu {
@@ -60,37 +68,37 @@ body {
   width: 100%;
   background-color: cornsilk;
 }
-.home .homeWrap {
+.home .home-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.home .homeWrap .home-info {
+.home .home-wrap .home-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.home-info .txtBox {
+.home-info .txtbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.txtBox {
+.txtbox {
   margin-top: 40px;
 }
-.txtBox > p {
+.txtbox > p {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
 }
-.txtBox > h1 {
+.txtbox > h1 {
   font-size: 34px;
   font-weight: 700;
 }
-.homeWrap .download {
+.home-wrap .download {
   margin: 20px 0;
   border-radius: 10%;
   background-color: rgb(180, 238, 142);
@@ -116,7 +124,7 @@ body {
   height: 24px;
 }
 /* About me css!! */
-.aboutWrap {
+.about-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +132,7 @@ body {
   width: 100%;
   background-color: cornsilk;
 }
-.aboutWrap img {
+.about-wrap img {
   width: 160px;
   height: 200px;
   border-radius: 60%;
@@ -132,12 +140,12 @@ body {
   margin: 25px 0;
 }
 
-.aboutWrap .self-story .introduce {
+.about-wrap .self-story .introduce {
   font-size: 15px;
   text-align: center;
   margin: 20px 0;
 }
-.AboutUl {
+.About-ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,7 +154,7 @@ body {
   width: 1800px;
 }
 
-.AboutUl > li {
+.About-ul > li {
   width: 25%;
   height: 80px;
   font-size: 15px;
@@ -163,7 +171,6 @@ body {
   flex-direction: column;
   justify-content: content;
   align-items: center;
-  height: 600px;
   width: 100%;
   background-color: cornsilk;
 }
@@ -186,28 +193,80 @@ body {
   height: 70px;
   background-repeat: no-repeat;
   background-size: contain;
+  background: url("../img/skill/css_sprites.png");
 }
 .MySkillsets .list-skills .html {
-  background: url("../img/skill/css_sprites.png") -10px -80px;
+  background-position: -10px -80px;
 }
 .MySkillsets .list-skills .css {
-  background: url("../img/skill/css_sprites.png") -10px -10px;
+  background-position: -10px -10px;
 }
 .MySkillsets .list-skills .js {
-  background: url("../img/skill/css_sprites.png") -10px -150px;
+  background-position: -10px -150px;
 }
 .MySkillsets .list-skills .react {
-  background: url("../img/skill/css_sprites.png") -10px -360px;
+  background-position: -10px -360px;
 }
 .MySkillsets .list-skills .node {
-  background: url("../img/skill/css_sprites.png") -10px -220px;
+  background-position: -10px -220px;
 }
 .MySkillsets .list-skills .sass {
-  background: url("../img/skill/css_sprites.png") -10px -430px;
+  background-position: -10px -430px;
 }
 .MySkillsets .list-skills .python {
-  background: url("../img/skill/css_sprites.png") -10px -290px;
+  background-position: -10px -290px;
 }
+/* JustFun 구역 */
+.JustFun {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.Just-arcticle {
+  width: 70%;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  border: 3px double rgb(192, 186, 186);
+  border-radius: 0 0 10% 10%;
+  padding-bottom: 10px;
+}
+.JustFun .codepen-wrap .codepen {
+  height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  margin: 1em 0;
+  padding: 1em;
+}
+.Just-arcticle .codepen-wrap .just-font > h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.Just-arcticle .codepen-wrap .just-font > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.JustFun .link-fun {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.JustFun .link-fun a {
+  border-radius: 25%;
+  background-color: aquamarine;
+  opacity: 0.7;
+}
+
 /* Web!!! */
 @media screen and (min-width: 760px) {
   .wrap-mobile {
@@ -260,11 +319,34 @@ body {
     align-items: center;
     background-color: cornsilk;
   }
-  .home .homeWrap {
+  .home .home-wrap {
     display: flex;
   }
-  .myActive .velog {
+  .my-active .velog {
     width: 24px;
     height: 24px;
+  }
+  /* just영역 */
+  .Just-arcticle .codepen-wrap {
+    display: flex;
+    width: 100%;
+  }
+  .Just-arcticle .codepen-wrap .just-font {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    text-align: center;
+    width: 100px;
+  }
+  .JustFun .codepen-wrap .codepen {
+    width: 50%;
+    height: 300px;
+  }
+  .Just-arcticle .codepen-wrap .link-fun {
+    width: 50%;
+    height: 24px;
+    font-size: 17px;
+    margin-left: 50px;
   }
 }
