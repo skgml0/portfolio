@@ -4,10 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Lahee 포트폴리오</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
+  <style>
+    .project-section {
+      margin: 0;
+      background: lightgray;
+      text-align: center;
+      color: #fefefe;
+      position: relative;
+      width: 320px;
+      height: 400px;
+      margin: 50px 100px;
+      perspective: 3000px;
+      margin-bottom: 200px;
+      /* border: 3px solid red; */
+    }
+
+    .carousel {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      animation: rotate360 60s infinite forwards linear;
+      /* border: 3px solid yellow; */
+    }
+    .carousel__face {
+      position: absolute;
+      width: 300px;
+      height: 350px;
+      top: 20px;
+      left: 10px;
+      right: 10px;
+      margin: 0 auto;
+      background-size: contain;
+      box-shadow: inset 0 0 0 2000px rgba(19, 20, 19, 0.5);
+      display: flex;
+      opacity: 0.7;
+    }
+
+    span {
+      margin: auto;
+      font-size: 2rem;
+    }
+
+    .carousel__face:nth-child(1) {
+      background: url("./img/project/gradation.png") no-repeat;
+      background-size: 100%;
+      transform: rotateY(0deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(2) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(40deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(3) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(80deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(4) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(120deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(5) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(160deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(6) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(200deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(7) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(240deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(8) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(280deg) translateZ(430px);
+    }
+    .carousel__face:nth-child(9) {
+      background-image: url("./img/project/gyul.png");
+      transform: rotateY(320deg) translateZ(430px);
+    }
+
+    @keyframes rotate360 {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+  </style>
   <body>
     <!-- 모바일용 -->
     <div class="wrap-mobile">
@@ -75,7 +164,7 @@
     </header>
     <main>
       <section id="#home" class="home">
-        <h2>home</h2>
+        <h2 class="hide-text">home</h2>
         <div class="home-wrap">
           <article class="home-info">
             <div class="txtbox">
@@ -121,9 +210,12 @@
           <ul class="About-ul">
             <li>
               자격증 : 정보처리기사 | SQLD <br />
-              외국어 : 오픽 IM1
+              외국어 : 오픽 IM1 | 토익 740점
             </li>
-            <li>교외 수상<br /></li>
+            <li>
+              교외 수상<br />
+              -
+            </li>
           </ul>
         </div>
       </section>
@@ -224,71 +316,94 @@
       </section>
       <section id="#Projects" class="Projects">
         <h2>Projects</h2>
-        <div class="projects-slide-wrap">
-          <article class="project-article">
-            <h4>귤귤마켓</h4>
-            <img
-              src="./img/project/gyul.png"
-              alt="귤귤마켓"
-              class="project-img"
-            />
-            <p>gyulgyulmarket입니다.</p>
-            <div class="project-btn">
-              <button class="demo">Live Demo</button>
-              <a href="" class="link-git">
-                <img src="" alt="" />
-              </a>
-            </div>
-          </article>
-          <article class="project-article">
-            <h4>멋나는 쇼핑몰</h4>
-            <img
-              src="./img/project/gyul.png"
-              alt="귤귤마켓"
-              class="project-img"
-            />
-            <p>gyulgyulmarket입니다.</p>
-            <div class="project-btn">
-              <button class="demo">Live Demo</button>
-              <a href="" class="link-git">
-                <img src="" alt="" />
-              </a>
-            </div>
-          </article>
-          <article class="project-article">
-            <h4>Mark Your Gradients</h4>
-            <img
-              src="./img/project/gyul.png"
-              alt="귤귤마켓"
-              class="project-img"
-            />
-            <p>gyulgyulmarket입니다.</p>
-            <div class="project-btn">
-              <button class="demo">Live Demo</button>
-              <a href="" class="link-git">
-                <img src="" alt="" />
-              </a>
-            </div>
-          </article>
-          <article class="project-article">
-            <h4>Futurerama Web</h4>
-            <img
-              src="./img/project/gyul.png"
-              alt="귤귤마켓"
-              class="project-img"
-            />
-            <p>Typescript와 Sampleapi를 이용한 웹 사이트입니다</p>
-            <div class="project-btn">
-              <button class="demo">Live Demo</button>
-              <a href="" class="link-git">
-                <img src="" alt="" />
-              </a>
-            </div>
-          </article>
+        <div class="project-section">
+          <section class="carousel">
+            <!-- <h3>ss</h3> -->
+            <article class="carousel__face">
+              <h3 class="project-tit">This is something</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">Very special</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">Special is the key</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">For you</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">Just give it</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">A try</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">And see</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">How IT Works</h3>
+            </article>
+            <article class="carousel__face">
+              <h3 class="project-tit">Woow</h3>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section id="#Mail" class="Mail">
+        <div class="email-wrap">
+          <h2>Email Me!</h2>
+          <form
+            class="gform"
+            method="POST"
+            data-email="hnh2714@gmail.com"
+            action="https://script.google.com/macros/s/AKfycbyiqvM1LSH2WIexZ4bHod0BcL1KFCMe0sbDgi0m/exec"
+          >
+            <fieldset>
+              <div class="box-input">
+                <label for="userName">Name Please</label>
+                <input
+                  type="text"
+                  id="userName"
+                  name="name"
+                  placeholder="이름"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <label for="useremail">Email Address</label>
+                <input
+                  type="email"
+                  id="userEmail"
+                  name="email"
+                  placeholder="이메일"
+                  required
+                />
+              </div>
+              <div class="box-input">
+                <label for="userMessage">Message</label>
+                <textarea
+                  id="userMessage"
+                  name="message"
+                  placeholder="메세지"
+                  required
+                ></textarea>
+              </div>
+              <div class="box-input">
+                <button type="submit" class="btn-send">Send Message</button>
+              </div>
+              <!-- <div style="display: none" class="thankyou_message"> -->
+              <div class="thankyou_message">
+                <img src="./img/thankyou.jpg" alt="감사인사" />
+                <p>연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다.</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </section>
     </main>
     <footer></footer>
+
     <script>
       // function mobile_nav() {
       //   var m_navDisplay = false;
@@ -302,5 +417,10 @@
       //   }
       // }
     </script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="./email.js"
+    ></script>
   </body>
 </html>
