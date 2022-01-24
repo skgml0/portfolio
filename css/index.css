@@ -171,10 +171,13 @@ h2 {
 }
 
 .About-ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25%;
   height: 80px;
   font-size: 15px;
-  line-height: 150%;
+  line-height: 1.5;
   background-color: #f2ffe9;
   margin-bottom: 50px;
   padding: 20px 20px 30px;
